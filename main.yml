@@ -1,5 +1,5 @@
 name: Explain
-version: 0.0.1
+version: 0.0.2
 author: enconvo
 on: {}
 steps:
@@ -27,7 +27,7 @@ steps:
       sort: 2
       messages:
       - role: system
-        content: 'Clarify this text and define any technical terms of: {{text|contextText}}'
+        content: 'Clarify this text and define any technical terms of: {{text|contextText|copiedText}}'
 extensionId: enconvo.explain
 logo: ns:explain
 description: Clarify this text and define any technical terms
