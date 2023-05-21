@@ -2,6 +2,12 @@
   "identifier": "enconvo.explain",
   "versions": [
     {
+      "version": "0.0.2",
+      "desc": "Merge remote-tracking branch 'origin/main'",
+      "url": "https://github.com/ysnows/enconvo-explain/releases/download/v0.0.2/enconvo-explain.enconvoplugin",
+      "minAppVersion": "1.1.8"
+    },
+    {
       "version": "0.0.1",
       "desc": "feat: 1. v0.0.1",
       "url": "https://github.com/ysnows/enconvo-explain/releases/download/v0.0.1/enconvo-explain.enconvoplugin",
