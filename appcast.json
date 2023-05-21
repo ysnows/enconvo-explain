@@ -1,11 +1,6 @@
 {
-  "identifier": "enconvo.improve-writing",
+  "identifier": "enconvo.explain",
   "versions": [
-    {
-      "version": "0.0.1",
-      "desc": "feat: init",
-      "url": "https://github.com/ysnows/enconvo-Improve-Writing/releases/download/v0.0.1/enconvo-Improve-Writing.enconvoplugin",
-      "minAppVersion": "1.1.8"
-    }
+
   ]
 }

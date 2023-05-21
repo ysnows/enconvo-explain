@@ -1,4 +1,4 @@
-name: Improve writing
+name: Explain
 version: 0.0.1
 author: enconvo
 on: {}
@@ -6,6 +6,11 @@ steps:
 - name: ''
   uses: prompt
   env:
+    Temperature:
+      type: enum
+      value: '0.9'
+      sort: 1
+      messages: []
     Output:
       type: bool
       value: 'true'
@@ -22,23 +27,13 @@ steps:
       sort: 2
       messages:
       - role: system
-        content: 'As a writing improvement assistant, your task is to improve the
-          spelling, grammar, clarity, concision, and overall readability of the text
-          provided, while breaking down long sentences, reducing repetition, and providing
-          suggestions for improvement. Please provide only the corrected language
-          version of the text based on the text language and avoid including explanations.
-          Please begin by editing the following text: {{text|contextText}}'
-    Temperature:
-      type: enum
-      value: '0.9'
-      sort: 1
-      messages: []
-extensionId: enconvo.improve-writing
-logo: ns:improve writting
-description: Improve writing
+        content: 'Clarify this text and define any technical terms of: {{text|contextText}}'
+extensionId: enconvo.explain
+logo: ns:explain
+description: Clarify this text and define any technical terms
 async: false
 shortName: ''
-homePage: https://github.com/ysnows/enconvo-Improve-Writing
-appCast: ''
+homePage: https://github.com/ysnows/enconvo-explain
+appCast: 'https://raw.githubusercontent.com/ysnows/enconvo-explain/main/appcast.json'
 shortCut: ''
 minAppVersion: ''

@@ -1,10 +1,10 @@
 {
-  "homePage" : "https:\/\/github.com\/ysnows\/enconvo-Improve-Writing",
-  "appCast" : "https://raw.githubusercontent.com/ysnows/enconvo-Improve-Writing/main/appcast.json",
-  "extensionId" : "enconvo.improve-writing",
-  "logo" : "ns:improve writting",
+  "author" : "enconvo",
+  "logo" : "ns:explain",
+  "appCast" : "https://raw.githubusercontent.com/ysnows/enconvo-explain/main/appcast.json",
   "version" : "0.0.1",
-  "description" : "Improve writing",
-  "name" : "Improve writing",
-  "author" : "enconvo"
+  "homePage" : "https:\/\/github.com\/ysnows\/enconvo-explain",
+  "extensionId" : "enconvo.explain",
+  "name" : "Explain",
+  "description" : "Clarify this text and define any technical terms"
 }
