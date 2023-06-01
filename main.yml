@@ -1,21 +1,11 @@
 name: Explain
-version: 0.0.2
+version: 0.0.3
 author: enconvo
 on: {}
 steps:
 - name: ''
   uses: prompt
   env:
-    Temperature:
-      type: enum
-      value: '0.9'
-      sort: 1
-      messages: []
-    Output:
-      type: bool
-      value: 'true'
-      sort: 3
-      messages: []
     Model:
       type: enum
       value: gpt-3.5-turbo
@@ -28,12 +18,40 @@ steps:
       messages:
       - role: system
         content: 'Clarify this text and define any technical terms of: {{text|contextText|copiedText}}'
+    Temperature:
+      type: enum
+      value: '1.0'
+      sort: 1
+      messages: []
 extensionId: enconvo.explain
 logo: ns:explain
 description: Clarify this text and define any technical terms
 async: false
-shortName: ''
 homePage: https://github.com/ysnows/enconvo-explain
-appCast: 'https://raw.githubusercontent.com/ysnows/enconvo-explain/main/appcast.json'
-shortCut: ''
-minAppVersion: ''
+appCast: https://raw.githubusercontent.com/ysnows/enconvo-explain/main/appcast.json
+minAppVersion: 1.2.1
+flowType: prompt
+options:
+- title: General
+  items:
+  - identifier: Alias
+    type: text
+    title: Alias
+    defaultValue: ''
+    menuValues: []
+    desc: ''
+    placeholderText: Add alias
+    textWidth: 1.6e+2
+    disable: false
+  - identifier: Hotkey
+    type: hotkey
+    title: Hotkey
+    defaultValue: ''
+    menuValues: []
+    desc: "This shortcut will open an ai conversation window from anywhere in the
+      system\n      . Make sure it is not conflicting with other global shortcuts."
+    placeholderText: Add a hotkey to global start
+    textWidth: 1.6e+2
+    disable: false
+  desc: ''
+sort: 10
